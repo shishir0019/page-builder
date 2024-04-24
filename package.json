@@ -1,0 +1,38 @@
+{
+  "name": "@shishir0019/page-builder",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "version": "0.0.1",
+  "main": "./dist/page-builder.umd.cjs",
+  "module": "./dist/page-builder.js",
+  "exports": {
+    ".": {
+      "import": "./dist/page-builder.js",
+      "require": "./dist/page-builder.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "grapesjs": "^0.21.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "grapesjs-typed": "^2.0.1",
+    "sass": "^1.75.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue": "^3.4.21",
+    "vue-tsc": "^2.0.6"
+  },
+  "author": "shishir0019",
+  "license": "ISC"
+}

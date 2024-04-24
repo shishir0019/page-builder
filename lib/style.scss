@@ -1,0 +1,52 @@
+.gjs {
+    &-cv {
+        &-canvas {
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.root-container{
+    background-color: #444;
+}
+
+.panel {
+    &__top {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        position: initial;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    &__basic-actions {
+        position: initial;
+    }
+
+    &__right {
+        flex-basis: 230px;
+        position: relative;
+        overflow-y: auto;
+    }
+
+    &__switcher {
+        position: initial;
+    }
+}
+
+.editor {
+    &-row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        // height: 300px;
+    }
+
+    &-canvas {
+        flex-grow: 1;
+    }
+}
